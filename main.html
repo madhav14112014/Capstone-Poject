@@ -3,47 +3,214 @@
     <head>
         <title>Home Page</title>
         <style>
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-            }
-            .topNav {
-                background-color: #75cee2;
-                overflow: hidden;
-            }
-            .topNav a {
-                float: left;
-                display: block;
-                color: white;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-                font-size: 17px;
-            }
-            .topNav a:hover {
-                background-color: #e7d8d8;
-                color: black;
-            }
-            .topNav a.active {
-                background-color: #4caf98;
-                color: white;
-            }
+           body  {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.topNav{
+    overflow: hidden;
+    background-color: #333;
+}
+.topNav a{
+    float: left;
+    color: #1affa3;
+    text-align: center;
+    padding:14px 16px ;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topNav a.active{
+    background-color: #75a5c9;
+    color: black;
+}
+.topNav a:hover{
+    background-color: #082b5f;
+    color: black;
+}
+.section{
+    text-align: center;
+    padding: 50px 80px;
+}
+.section-dark{
+    background-color: #282e34;
+    color: #ddd;
+}
+.img1{
+    background-image: url("image4.jpeg");
+    min-height: 400px;
+}
+.img2{
+    background-image:url("image5.jpeg") ;
+    min-height: 400px;
+}
+.img3{
+    background-image:url("image6.jpeg");
+    min-height: 400px;
+}
+.img1,.img2,.img3{
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.pText{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+.pText .border-trans{
+    background-color: transparent;
+}
+.pText .border{
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+}
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #000;
+    color: #ddd;
+    text-align: center;
+}body  {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.topNav{
+    overflow: hidden;
+    background-color: #333;
+}
+.topNav a{
+    float: left;
+    color: #1affa3;
+    text-align: center;
+    padding:14px 16px ;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topNav a.active{
+    background-color: #75a5c9;
+    color: black;
+}
+.topNav a:hover{
+    background-color: #082b5f;
+    color: black;
+}
+.section{
+    text-align: center;
+    padding: 50px 80px;
+}
+.section-dark{
+    background-color: #282e34;
+    color: #ddd;
+}
+.pimg1{
+    background-image: url("Library image.jpg");
+    min-height: 400px;
+}
+.pimg2{
+    background-image:url("Library image-1.jpg") ;
+    min-height: 400px;
+}
+.pimg3{
+    background-image:url("Library image-2.jpg");
+    min-height: 400px;
+}
+.pimg1,.pimg2,.pimg3{
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.pText{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+.pText .border-trans{
+    background-color: transparent;
+}
+.pText .border{
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+}
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #000;
+    color: #ddd;
+    text-align: center;
+}
+
         </style>
     </head>
     <body>
+
         <div class="topNav">
             <a class="active" href="main.html">Home</a>
             <a href="about.html">About</a>
             <a href="gallery.html">Gallery</a>
             <a href="contact.html">Contact</a>
         </div>
+
+
         <section>
-            <img class="mySlide" src="Library image.jpg" style="width:100%; height:500px;">
-             <img class="mySlide" src="Library image-1.jpg" style="width:100%; height:500px;">
-              <img class="mySlide" src="Library image-2.jpg" style="width:100%; height:500px;">
-               <img class="mySlide" src="Library image-3.jpg" style="width:100%; height:500px;">
-                <img class="mySlide" src="Library image-4.jpg" style="width:100%; height:500px;">
+            <img class="mySlide" src="Library image.jpg" style="width:100%; height:300px;">
+             <img class="mySlide" src="Library image-1.jpg" style="width:100%; height:300px;">
+              <img class="mySlide" src="Library image-2.jpg" style="width:100%; height:300px;">
+               <img class="mySlide" src="Library image-3.jpg" style="width:100%; height:300px;">
+                <img class="mySlide" src="Library image-4.jpg" style="width:100%; height:300px;">
         </section>
+
+
+           <section class="section section-dark">
+      <h2>Section One</h2>
+      <p>Web development is the work involved in developing a Web site for the Internet (World Wide Web) or an intranet (a private network).</p>
+    </section>
+    <div class="pimg1">
+      <div class="ptext">
+        <span class="border trans">Image One Text</span>
+      </div>
+    </div>
+
+       <section class="section section-dark">
+      <h2>Section Two</h2>
+      <p>Web development is the work involved in developing a Web site for the Internet (World Wide Web) or an intranet (a private network).</p>
+    </section>
+    <div class="pimg2">
+      <div class="ptext">
+        <span class="border trans">Image Two Text</span>
+      </div>
+    </div>
+
+       <section class="section section-dark">
+      <h2>Section Three</h2>
+      <p>Web development is the work involved in developing a Web site for the Internet (World Wide Web) or an intranet (a private network).</p>
+    </section>
+    <div class="pimg3">
+      <div class="ptext">
+        <span class="border trans">Image Three Text</span>
+      </div>
+    </div>
         <script>
             var myIndex = 0;
             carousel();
