@@ -3,31 +3,62 @@
     <head>
         <title>Contact Page</title>
         <style>
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-            }
-            .topNav {
-                background-color: #75cee2;
-                overflow: hidden;
-            }
-            .topNav a {
-                float: left;
-                display: block;
-                color: white;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-                font-size: 17px;
-            }
-            .topNav a:hover {
-                background-color: #e7d8d8;
-                color: black;
-            }
-            .topNav a.active {
-                background-color: #4caf98;
-                color: white;
-            }
+         body  {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.topNav{
+    overflow: hidden;
+    background-color: #333;
+}
+.topNav a{
+    float: left;
+    color: #1affa3;
+    text-align: center;
+    padding:14px 16px ;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topNav a.active{
+    background-color: #75a5c9;
+    color: black;
+}
+.topNav a:hover{
+    background-color: #082b5f;
+    color: black;
+}
+.img1{
+    background-image: url("image4.jpeg");
+    min-height: 400px;
+}
+.img2{
+    background-image:url("image5.jpeg") ;
+    min-height: 400px;
+}
+.img3{
+    background-image:url("image6.jpeg");
+    min-height: 400px;
+}
+.img1,.img2,.img3{
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #000;
+    color: #ddd;
+    text-align: center;
+}
+p {
+    font-size: 20px; 
+}
         </style>
     </head>
     <body>
@@ -37,5 +68,56 @@
             <a href="gallery.html">Gallery</a>
             <a href="contact.html">Contact</a>
         </div>
+        <div class="footer">
+            <p>“A reader lives a thousand lives before he dies . . . The man who never reads lives only one,” by George R.R. Martin</p>
+        </div>
+        <p>
+            📞 Contact Us
+
+We would Love to Hear From You
+Have a question, looking for a particular book, or want to know more about our library? Feel free to get in touch with us. We’re always happy to help you discover your next great read.
+
+📍 Address
+<br>
+<br>
+[Near Town Hall, Vazhayila, Trivandrum, Kerala, 626364]
+
+📞 Phone
+<br>
+<br>
+[6238115287]
+
+✉️ Email
+<br>
+<br>
+[madahvvinojnair@gmail.com]
+
+🕒 Opening Hours
+<br>
+<br>
+Monday-Saturday: 9:00 AM-6:00 PM
+Sunday: Closed
+
+Send Us a Message
+<br>
+<br>
+Have a suggestion or enquiry? Send us a message and we will get back to you as soon as possible
+        </p>
+                <script>
+            var myIndex = 0;
+            carousel();
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlide");
+                for(i=0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if(myIndex >x.length) {myIndex = 1}
+                x[myIndex-1].style.display = "block";
+                setTimeout(carousel, 3000);
+            }
+
+        </script>
     </body>
 </html>

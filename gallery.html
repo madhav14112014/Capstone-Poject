@@ -3,31 +3,62 @@
     <head>
         <title>Gallery Page</title>
         <style>
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-            }
-            .topNav {
-                background-color: #75cee2;
-                overflow: hidden;
-            }
-            .topNav a {
-                float: left;
-                display: block;
-                color: white;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-                font-size: 17px;
-            }
-            .topNav a:hover {
-                background-color: #e7d8d8;
-                color: black;
-            }
-            .topNav a.active {
-                background-color: #4caf98;
-                color: white;
-            }
+   body  {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.topNav{
+    overflow: hidden;
+    background-color: #333;
+}
+.topNav a{
+    float: left;
+    color: #1affa3;
+    text-align: center;
+    padding:14px 16px ;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topNav a.active{
+    background-color: #75a5c9;
+    color: black;
+}
+.topNav a:hover{
+    background-color: #082b5f;
+    color: black;
+}
+.img1{
+    background-image: url("image4.jpeg");
+    min-height: 400px;
+}
+.img2{
+    background-image:url("image5.jpeg") ;
+    min-height: 400px;
+}
+.img3{
+    background-image:url("image6.jpeg");
+    min-height: 400px;
+}
+.img1,.img2,.img3{
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #000;
+    color: #ddd;
+    text-align: center;
+}
+p {
+    font-size: 20px; 
+}
         </style>
     </head>
     <body>
@@ -37,5 +68,68 @@
             <a href="gallery.html">Gallery</a>
             <a href="contact.html">Contact</a>
         </div>
+            <div class="footer">
+        <p>“A reader lives a thousand lives before he dies . . . The man who never reads lives only one,” by George R.R. Martin</p>
+        </div>
+        <p>
+            📸 Library Gallery
+        <br>
+A Glimpse Into Our Library
+
+<br>
+<br>
+
+Take a look inside our library and explore the spaces, books, and moments that make it special. From peaceful reading corners to shelves filled with stories, our gallery captures the joy of reading and discovery.
+
+<br>
+<br>
+Our Collection
+
+<br>
+<br>
+Explore photographs of our novels, manga, biographies, and other books available in our collection.
+
+<br>
+<br>
+Reading Corner
+
+<br>
+<br>
+A quiet and comfortable space where readers can relax, explore new stories, and enjoy their favorite books.
+
+<br>
+<br>
+Our Bookshelves
+
+<br>
+<br>
+Discover our carefully organized shelves, filled with stories, knowledge, and adventures waiting to be explored.
+
+<br>
+<br>
+Library Moments
+
+<br>
+<br>
+
+A collection of memorable moments from reading sessions, book discussions, events, and activities at our library.
+</p>
+        <script>
+            var myIndex = 0;
+            carousel();
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlide");
+                for(i=0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if(myIndex >x.length) {myIndex = 1}
+                x[myIndex-1].style.display = "block";
+                setTimeout(carousel, 3000);
+            }
+
+        </script>
+
     </body>
 </html>

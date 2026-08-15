@@ -3,85 +3,8 @@
     <head>
         <title>Home Page</title>
         <style>
-           body  {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.topNav{
-    overflow: hidden;
-    background-color: #333;
-}
-.topNav a{
-    float: left;
-    color: #1affa3;
-    text-align: center;
-    padding:14px 16px ;
-    text-decoration: none;
-    font-size: 17px;
-}
-.topNav a.active{
-    background-color: #75a5c9;
-    color: black;
-}
-.topNav a:hover{
-    background-color: #082b5f;
-    color: black;
-}
-.section{
-    text-align: center;
-    padding: 50px 80px;
-}
-.section-dark{
-    background-color: #282e34;
-    color: #ddd;
-}
-.img1{
-    background-image: url("image4.jpeg");
-    min-height: 400px;
-}
-.img2{
-    background-image:url("image5.jpeg") ;
-    min-height: 400px;
-}
-.img3{
-    background-image:url("image6.jpeg");
-    min-height: 400px;
-}
-.img1,.img2,.img3{
-    position: relative;
-    opacity: 0.70;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-.pText{
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    color: #000;
-    font-size: 27px;
-    letter-spacing: 8px;
-    text-transform: uppercase;
-}
-.pText .border-trans{
-    background-color: transparent;
-}
-.pText .border{
-    background-color: #111;
-    color: #fff;
-    padding: 20px;
-}
-.footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #000;
-    color: #ddd;
-    text-align: center;
-}body  {
+
+body  {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -183,8 +106,8 @@
 
 
            <section class="section section-dark">
-      <h2>Section One</h2>
-      <p>Web development is the work involved in developing a Web site for the Internet (World Wide Web) or an intranet (a private network).</p>
+      <h2>Noval Section</h2>
+      <p>Step into new worlds through stories filled with imagination, adventure, mystery, romance, and unforgettable characters. Our novel collection offers something for every reader, whether you enjoy thrilling adventures or heartwarming stories.</p>
     </section>
     <div class="pimg1">
       <div class="ptext">
@@ -193,8 +116,8 @@
     </div>
 
        <section class="section section-dark">
-      <h2>Section Two</h2>
-      <p>Web development is the work involved in developing a Web site for the Internet (World Wide Web) or an intranet (a private network).</p>
+      <h2>Manga Section</h2>
+      <p>Explore the exciting world of manga through captivating artwork and engaging storytelling. From action and fantasy to comedy and drama, discover stories that bring characters and adventures to life, one page at a time.</p>
     </section>
     <div class="pimg2">
       <div class="ptext">
@@ -203,13 +126,16 @@
     </div>
 
        <section class="section section-dark">
-      <h2>Section Three</h2>
-      <p>Web development is the work involved in developing a Web site for the Internet (World Wide Web) or an intranet (a private network).</p>
+      <h2>Biography Section</h2>
+      <p>Discover the real-life stories of remarkable people from different fields and generations. Learn about their journeys, challenges, achievements, and the experiences that shaped their lives and inspired others.</p>
     </section>
     <div class="pimg3">
       <div class="ptext">
         <span class="border trans">Image Three Text</span>
       </div>
+    </div>
+    <div class="footer">
+        <p>“A reader lives a thousand lives before he dies . . . The man who never reads lives only one,” by George R.R. Martin</p>
     </div>
         <script>
             var myIndex = 0;
@@ -225,6 +151,7 @@
                 x[myIndex-1].style.display = "block";
                 setTimeout(carousel, 3000);
             }
+
         </script>
     </body>
 </html>
