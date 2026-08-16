@@ -3,7 +3,7 @@
     <head>
         <title>About Page</title>
         <style>
-           body  {
+body  {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -27,25 +27,51 @@
     background-color: #082b5f;
     color: black;
 }
-.img1{
-    background-image: url("image4.jpeg");
+.section{
+    text-align: center;
+    padding: 50px 80px;
+}
+.section-dark{
+    background-color: #282e34;
+    color: #ddd;
+}
+.pimg1{
+    background-image: url("Library image.jpg");
     min-height: 400px;
 }
-.img2{
-    background-image:url("image5.jpeg") ;
+.pimg2{
+    background-image:url("Library image-1.jpg") ;
     min-height: 400px;
 }
-.img3{
-    background-image:url("image6.jpeg");
+.pimg3{
+    background-image:url("Library image-2.jpg");
     min-height: 400px;
 }
-.img1,.img2,.img3{
+.pimg1,.pimg2,.pimg3{
     position: relative;
     opacity: 0.70;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+.pText{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+.pText .border-trans{
+    background-color: transparent;
+}
+.pText .border{
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
 }
 .footer{
     position: fixed;
@@ -56,9 +82,6 @@
     color: #ddd;
     text-align: center;
 }
-p {
-    font-size: 20px; 
-}
         </style>
     </head>
     <body>
@@ -68,17 +91,54 @@ p {
             <a href="gallery.html">Gallery</a>
             <a href="contact.html">Contact</a>
         </div>
-        <h1>About Us</h1>
-        <h3>Learn More About Our Company</h3>
-        <p>Welcome to Madhav's Library. We are a community-driven book repository dedicated to providing easy access to a wide variety of literary works.</p>
-        <p>We have started the company on 23-08-2026.</p>
-        <p>We are trying to create a knowledge base for all book lovers.</p>
-        <p>Our mission is to give easy access to a wide variety of books for everyone for free.</p>
-        <p>Our library includes Mangas, Novels, Comics, Biographies and  many more!</p>
+                        <section>
+            <img class="mySlide" src="Library image.jpg" style="width:100%; height:300px;">
+             <img class="mySlide" src="Library image-1.jpg" style="width:100%; height:300px;">
+              <img class="mySlide" src="Library image-2.jpg" style="width:100%; height:300px;">
+               <img class="mySlide" src="Library image-3.jpg" style="width:100%; height:300px;">
+                <img class="mySlide" src="Library image-4.jpg" style="width:100%; height:300px;">
+        </section>
+<p> About Us
+    <br>
+Welcome to Evergreen Library, a place where knowledge, imagination, and community come together.
+<br>
+<br>
+Our library is more than just a collection of books. It is a welcoming space where readers of all ages can discover new ideas, explore different worlds, learn new skills, and connect with others. From timeless classics to the latest books, our collection is designed to inspire curiosity and encourage a lifelong love of reading.
+<br>
+We are committed to making learning and information accessible to everyone. Whether you are a student looking for study resources, a book lover searching for your next great read, or someone simply looking for a peaceful place to learn and grow, Evergreen Library is here for you.
+<br>
+<br>
+ Our Mission
+<br>
+Our mission is to provide a friendly and inclusive environment where everyone has access to knowledge, educational resources, and opportunities for personal growth.
+<br>
+<br>
+ Our Vision
+<br>
+We envision a vibrant community where reading, learning, and sharing knowledge help people build brighter futures.
+<br>
+Come in, explore our collection, and make yourself at home. There is always something new to discover at Evergreen Library.
+</p>
+
         
             <div class="footer">
         <p>“A reader lives a thousand lives before he dies . . . The man who never reads lives only one,” by George R.R. Martin</p>
     </div>
-    
+            <script>
+            var myIndex = 0;
+            carousel();
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlide");
+                for(i=0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if(myIndex >x.length) {myIndex = 1}
+                x[myIndex-1].style.display = "block";
+                setTimeout(carousel, 3000);
+            }
+
+        </script>
     </body>
 </html>
